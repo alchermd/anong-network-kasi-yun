@@ -16,7 +16,12 @@ class FilterBar extends React.Component {
 
   render() {
     return(
-      <input type="text" value={this.state.value} onChange={this.onChange}/>
+      <input type="text" 
+        value={this.state.value} 
+        onChange={this.onChange}
+        className="form-control"
+        placeholder="Enter number or network here. Ex. 0923 or 'Smart'"
+        autoFocus={true}/>
     )
   }
 }
