@@ -1,11 +1,12 @@
 import React from 'react'
 import FilterBar from './FilterBar'
 import NetworkTable from './NetworkTable'
+import networks from './mockData'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {networks: []}
+    this.state = {networks}
   }
 
   render() {
@@ -18,7 +19,7 @@ class App extends React.Component {
 
         <FilterBar />
         <div>
-        {this.state.networks.map(network => (<NetworkTable numbers={network}/>))}
+        {this.state.networks.map(network => (<NetworkTable network={network}/>))}
         </div>
       </div>
     )
