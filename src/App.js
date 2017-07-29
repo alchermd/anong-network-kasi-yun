@@ -6,7 +6,31 @@ import networks from './mockData'
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {networks}
+    this.state = {networks, activeNetworks: networks}
+
+    this.filterNumbers = this.filterNumbers.bind(this)
+  }
+
+  /**
+   * 
+   * @param {string} str -> The string that is used for filtering.
+   *  The state is reset if the string is empty. 
+   */
+  filterNumbers(str) {
+    if (str)
+    this.setState( 
+      {
+        activeNetworks: this.state.networks.map(network => 
+          ({
+            ...network,
+            numbers: network.numbers.filter(number => 
+              number.includes(str)
+          )})
+        )
+      } 
+    )
+    else
+      this.setState({activeNetworks: this.state.networks})
   }
 
   render() {
@@ -17,9 +41,9 @@ class App extends React.Component {
           <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque ad at, velit optio nostrum.</p>
         </div>
 
-        <FilterBar />
+        <FilterBar filterNumbers={this.filterNumbers} />
         <div>
-        {this.state.networks.map(network => (<NetworkTable network={network}/>))}
+        {this.state.activeNetworks.map(network => (<NetworkTable network={network}/>))}
         </div>
       </div>
     )
