@@ -24,7 +24,7 @@ class App extends React.Component {
           ({
             ...network,
             numbers: network.numbers.filter(number => 
-              number.includes(str)
+              (number.includes(str) || network.networkName.toUpperCase().includes(str.toUpperCase()))
           )})
         )
       } 
