@@ -5,13 +5,13 @@ const NetworkTable = ({network}) =>
     <table className="table table-hover">
       <thead>
         <tr>
-          <th>{network.networkName}</th>
+          <th><i className="fa fa-server" aria-hidden="true"></i> {network.networkName}</th>
         </tr>
       </thead>
       <tbody>
         {network.numbers.map((number, index) => 
           (<tr key={index}>
-            <td>{number}</td>
+            <td><i className="fa fa-mobile" aria-hidden="true"></i> {number}</td>
           </tr>)
         )}
       </tbody>
