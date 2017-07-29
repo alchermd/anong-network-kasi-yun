@@ -42,8 +42,9 @@ class App extends React.Component {
         </div>
 
         <FilterBar filterNumbers={this.filterNumbers} />
-        <div>
-        {this.state.activeNetworks.map((network, index) => (<NetworkTable network={network} key={index}/>))}
+
+        <div className="row">
+          {this.state.activeNetworks.map((network, index) => (<NetworkTable network={network} key={index}/>))}
         </div>
       </div>
     )
