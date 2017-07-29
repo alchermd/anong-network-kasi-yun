@@ -8,8 +8,8 @@ const NetworkTable = ({network}) =>
       </tr>
     </thead>
     <tbody>
-      {network.numbers.map(number => 
-        (<tr>
+      {network.numbers.map((number, index) => 
+        (<tr key={index}>
           <td>{number}</td>
         </tr>)
       )}
