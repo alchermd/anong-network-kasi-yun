@@ -1,12 +1,12 @@
 import React from 'react'
 import FilterBar from './FilterBar'
 import NetworkTable from './NetworkTable'
-import networks from './mockData'
+import networks from './networks.json' 
 
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {networks, activeNetworks: networks}
+    this.state = {networks: networks.data, activeNetworks: networks.data}
 
     this.filterNumbers = this.filterNumbers.bind(this)
   }
