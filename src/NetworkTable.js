@@ -1,16 +1,16 @@
 import React from 'react'
 
-const NetworkTable = ({networkName, numbers}) =>
-  (<table className="table">
+const NetworkTable = ({network}) =>
+  (<table className="table table-striped">
     <thead>
       <tr>
-        <td>networkName</td>
+        <th>{network.name}</th>
       </tr>
     </thead>
     <tbody>
-      {numbers.map(number => 
+      {network.numbers.map(number => 
         (<tr>
-          number
+          <td>{number}</td>
         </tr>)
       )}
     </tbody>
