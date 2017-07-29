@@ -1,0 +1,21 @@
+body { 
+  padding-bottom: 70px;
+  background-color: #03A9F4; 
+  color: #212121;
+}
+
+a {
+  color: #d3d3d3;
+}
+
+.page-header {
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.table > thead > tr > th, .table > tbody > tr >  td  {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.navbar-inverse {
+  background-color: #0288D1;
+}
