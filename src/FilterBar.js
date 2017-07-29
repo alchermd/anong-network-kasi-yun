@@ -1,4 +1,5 @@
 import React from 'react'
+import './FilterBar.css'
 
 class FilterBar extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class FilterBar extends React.Component {
       <input type="text" 
         value={this.state.value} 
         onChange={this.onChange}
-        className="form-control"
+        className="form-control FilterBar"
         placeholder="Enter number or network here. Ex. 0923 or 'Smart'"
         autoFocus={true}/>
     )
