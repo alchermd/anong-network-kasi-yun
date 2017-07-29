@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NetworkTable = ({network}) =>
-  (<table className="table table-striped">
+  (<table className="table table-striped table-bordered table-hover">
     <thead>
       <tr>
         <th>{network.name}</th>
