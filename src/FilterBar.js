@@ -11,6 +11,7 @@ class FilterBar extends React.Component {
   onChange(e) {
     e.preventDefault()
     this.setState({value: e.target.value})
+    this.props.filterNumbers(e.target.value)
   }
 
   render() {
