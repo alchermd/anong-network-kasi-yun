@@ -1,10 +1,25 @@
 import React from 'react'
+import FilterBar from './FilterBar'
+import NetworkTable from './NetworkTable'
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {networks: []}
+  }
+
   render() {
     return(
-      <div>
-        <h1>Hello, World!</h1>
+      <div className="container">
+        <div className="page-header text-center">
+          <h1>Anong Network Nga Ulit Yun?</h1>
+          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque ad at, velit optio nostrum.</p>
+        </div>
+
+        <FilterBar />
+        <div>
+        {this.state.networks.map(network => (<NetworkTable numbers={network}/>))}
+        </div>
       </div>
     )
   }
