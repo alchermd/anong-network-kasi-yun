@@ -4,3 +4,11 @@ body {
   letter-spacing: 1.5px;
   line-height: 2;
 }
+
+hr {
+  border: 1px solid #333;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
