@@ -4,7 +4,7 @@ const NetworkTable = ({network}) =>
   (<table className="table table-striped table-bordered table-hover">
     <thead>
       <tr>
-        <th>{network.name}</th>
+        <th>{network.networkName}</th>
       </tr>
     </thead>
     <tbody>
