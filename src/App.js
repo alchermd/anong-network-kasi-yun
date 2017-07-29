@@ -37,7 +37,7 @@ class App extends React.Component {
     return(
       <div className="container">
         <div className="page-header text-center">
-          <h1><em>"Anong Network Nga Ulit Yun?"</em></h1>
+          <h1><em>"Anong Network Nga Kasi Yun?"</em></h1>
           <p className="lead">
             Have you ever spoken those words in vain? Now you can search kung <em>anong network si crush</em>! <br/> No more accidental bawas sa load! &nbsp;
             <i className="fa fa-money" aria-hidden="true"></i> &nbsp;
