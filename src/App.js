@@ -38,7 +38,7 @@ class App extends React.Component {
       <div className="container">
         <div className="page-header text-center">
           <h1>Anong Network Nga Ulit Yun?</h1>
-          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque ad at, velit optio nostrum.</p>
+          <p className="lead">Have you ever spoken those words in vain? Now you can search kung <em>anong network si crush</em>! No more bawas piso sa load!</p>
         </div>
 
         <FilterBar filterNumbers={this.filterNumbers} />
